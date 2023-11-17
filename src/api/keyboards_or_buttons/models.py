@@ -11,5 +11,15 @@ class Menu:
 
 
 @dataclass
+class Games:
+    slot: str = "Слот"
+    dice: str = "Кубик"
+    soccer: str = "Футбол"
+    bowling: str = "Боулинг"
+    basketball: str = "Баскетболл"
+    darts: str = "Дартс"
+
+
+@dataclass
 class Register:
     accept: str = "Принимаю"

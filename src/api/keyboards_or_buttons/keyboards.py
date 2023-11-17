@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from src.api.keyboards_or_buttons.markup import Markup
-from src.api.keyboards_or_buttons.models import (Menu, Register
+from src.api.keyboards_or_buttons.models import (Menu, Register, Games
                                                  )
 
 
@@ -9,6 +9,7 @@ from src.api.keyboards_or_buttons.models import (Menu, Register
 class Keyboards:
     menu: Markup = Markup(Menu())
     register: Markup = Markup(Register())
+    games: Markup = Markup(Games())
 
 
 keyboards = Keyboards()
